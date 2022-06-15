@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
                     name='viewport'
                     content='width=device-width, initial-scale=1'
                 />
-                <title>RubenMate</title>
+                <title>ruben-mate</title>
             </Head>
             <Container maxW='container.md' pt={12}>
                 {children}
