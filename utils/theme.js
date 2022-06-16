@@ -29,7 +29,7 @@ const theme = extendTheme({
             variants: {
                 'section-title': {
                     textDecoration: 'underline',
-                    fontSize: 24,
+                    fontSize: 22,
                     textUnderlineOffset: 6,
                     textDecorationColor: '#525252',
                     textDecorationThickness: 4,
