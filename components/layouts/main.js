@@ -5,7 +5,7 @@ import Footer from '../footer'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as='main' pb={10}>
+        <Box as='main' height='100vh' display='flex' flexDir='column'>
             <Head>
                 <meta
                     name='viewport'
