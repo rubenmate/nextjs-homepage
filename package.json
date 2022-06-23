@@ -3,7 +3,10 @@
     "version": "0.1.0",
     "scripts": {
         "dev": "next dev",
-        "build": "next build"
+        "build": "next build",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@chakra-ui/icons": "^2.0.2",
@@ -19,6 +22,15 @@
         "react-icons": "^4.4.0"
     },
     "devDependencies": {
-        "prettier": "^2.7.0"
+        "eslint": "^8.18.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.3",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "eslint-plugin-react": "^7.30.0",
+        "prettier": "^2.7.0",
+        "husky": "^8.0.0"
     }
 }

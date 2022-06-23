@@ -11,12 +11,12 @@ const ProfilePicture = () => {
             <Image
                 borderColor={useColorModeValue('purple', '#8be9fd ')}
                 borderWidth={2}
-                borderStyle='solid'
-                maxWidth='150px'
-                display='inline-block'
-                borderRadius='full'
-                src='/images/profileimage.png'
-                alt='Profile Image'
+                borderStyle="solid"
+                maxWidth="150px"
+                display="inline-block"
+                borderRadius="full"
+                src="/images/profileimage.png"
+                alt="Profile Image"
                 bgGradient={useColorModeValue(
                     'linear(to-t, #6B46C1 3%, white 70%)',
                     'linear(to-t, #8be9fd 3%, #161b22 70%)'

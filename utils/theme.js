@@ -4,15 +4,15 @@ import { mode } from '@chakra-ui/theme-tools'
 const theme = extendTheme({
     config: {
         initialColorMode: 'dark',
-        useSystemColorMode: true,
+        useSystemColorMode: true
     },
 
     styles: {
-        global: (props) => ({ body: { bg: mode('white', '#161b22')(props) } }),
+        global: (props) => ({ body: { bg: mode('white', '#161b22')(props) } })
     },
 
     fonts: {
-        heading: "'M PLUS Rounded 1c'",
+        heading: "'M PLUS Rounded 1c'"
     },
 
     components: {
@@ -20,9 +20,9 @@ const theme = extendTheme({
             baseStyle: (props) => ({
                 color: mode('#6B46C1', '#8be9fd')(props),
                 textUnderlineOffset: 3,
-                fontWeight: 'bold',
+                fontWeight: 'bold'
                 // TODO: Decide if bold or semibold
-            }),
+            })
         },
 
         Heading: {
@@ -34,11 +34,11 @@ const theme = extendTheme({
                     textDecorationColor: '#525252',
                     textDecorationThickness: 4,
                     marginTop: 3,
-                    marginBottom: 4,
-                },
-            },
-        },
-    },
+                    marginBottom: 4
+                }
+            }
+        }
+    }
 })
 
 export default theme

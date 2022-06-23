@@ -7,7 +7,7 @@ import {
     ListItem,
     Button,
     Icon,
-    useColorModeValue,
+    useColorModeValue
 } from '@chakra-ui/react'
 import IntroCard from '../components/intro-card'
 import ProfilePicture from '../components/profile-picture'
@@ -20,7 +20,7 @@ const Page = () => {
         <Container>
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
-                    <Heading as='h2' variant='page-title'>
+                    <Heading as="h2" variant="page-title">
                         Rubén Maté
                     </Heading>
                 </Box>
@@ -35,13 +35,13 @@ const Page = () => {
                 <Heading as='h3' variant='section-title'>
                     Whoami
                 </Heading>
-                <Box textAlign='justify'>
+                <Box textAlign="justify">
                     I&apos;m a last year student of Computer Science degree in
                     Burgos University. I love everything related to coding and
                     learning new programming languages and frameworks. My
                     developer workflow revolves around the terminal and I have
                     my own{' '}
-                    <Link href='https://github.com/rubenmate/dotfiles'>
+                    <Link href="https://github.com/rubenmate/dotfiles">
                         Neovim config and dotfiles
                     </Link>
                     . <br />
@@ -68,7 +68,7 @@ const Page = () => {
                     </Project>
                     <Project>
                         <ProjectTitle>
-                            <Link href='https://github.com/rubenmate/homepage'>
+                            <Link href="https://github.com/rubenmate/homepage">
                                 My own homepage:
                             </Link>
                         </ProjectTitle>

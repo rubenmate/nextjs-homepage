@@ -11,7 +11,7 @@ import {
     MenuList,
     MenuButton,
     IconButton,
-    useColorModeValue,
+    useColorModeValue
 } from '@chakra-ui/react'
 import ColorModeToggleButton from './colormode-toggle-button'
 import Logo from './logo'

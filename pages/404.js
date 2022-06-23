@@ -6,7 +6,7 @@ import {
     Container,
     Divider,
     Button,
-    useColorModeValue,
+    useColorModeValue
 } from '@chakra-ui/react'
 
 const NotFound = () => {

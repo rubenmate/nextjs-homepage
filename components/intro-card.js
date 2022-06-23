@@ -6,10 +6,10 @@ const IntroCard = ({ children }) => {
             p={4}
             mb={6}
             mt={3}
-            textAlign='center'
+            textAlign="center"
             bg={useColorModeValue('#6B46C1', '#8be9fd')}
             textColor={useColorModeValue('white', 'navy')}
-            borderRadius='lg'
+            borderRadius="lg"
         >
             {children}
         </Box>
