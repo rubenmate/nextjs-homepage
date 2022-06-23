@@ -2,12 +2,7 @@ import { Box, Image, useColorModeValue } from '@chakra-ui/react'
 
 const ProfilePicture = () => {
     return (
-        <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 4 }}
-            ml={{ md: 6 }}
-            align='center'
-        >
+        <Box flexShrink={0} mt={4} align="center">
             <Image
                 borderColor={useColorModeValue('purple', '#8be9fd ')}
                 borderWidth={2}
