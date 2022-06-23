@@ -31,8 +31,8 @@ const Page = () => {
             </IntroCard>
             <ProfilePicture />
 
-            <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+            <Box as="section" mb={6}>
+                <Heading as="h3" variant="section-title">
                     Whoami
                 </Heading>
                 <Box textAlign="justify">
@@ -49,16 +49,16 @@ const Page = () => {
                 </Box>
             </Box>
 
-            <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+            <Box as="section" mb={6}>
+                <Heading as="h3" variant="section-title">
                     Projects
                 </Heading>
-                <Box textAlign='justify'>
+                <Box textAlign="justify">
                     I&apos;m currently learning JavaScript and HTML/CSS. My next
                     goal will be to learn React and Typescript.
                     <Project>
                         <ProjectTitle>
-                            <Link href='https://github.com/rubenmate/Letterboxd-Tweet-Poster'>
+                            <Link href="https://github.com/rubenmate/Letterboxd-Tweet-Poster">
                                 LetterBot:
                             </Link>
                         </ProjectTitle>
@@ -77,18 +77,18 @@ const Page = () => {
                     </Project>
                 </Box>
             </Box>
-            <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+            <Box as="section" mb={6}>
+                <Heading as="h3" variant="section-title">
                     Web Presence
                 </Heading>
                 <List>
                     <ListItem>
                         <Link
-                            href='https://github.com/rubenmate'
-                            target='_blank'
+                            href="https://github.com/rubenmate"
+                            target="_blank"
                         >
                             <Button
-                                variant='ghost'
+                                variant="ghost"
                                 colorScheme={useColorModeValue(
                                     'purple',
                                     'telegram'
@@ -101,11 +101,11 @@ const Page = () => {
                     </ListItem>
                     <ListItem>
                         <Link
-                            href='https://www.linkedin.com/in/ruben-mate'
-                            target='_blank'
+                            href="https://www.linkedin.com/in/ruben-mate"
+                            target="_blank"
                         >
                             <Button
-                                variant='ghost'
+                                variant="ghost"
                                 colorScheme={useColorModeValue(
                                     'purple',
                                     'telegram'

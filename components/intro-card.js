@@ -3,6 +3,7 @@ import { Box, useColorModeValue } from '@chakra-ui/react'
 const IntroCard = ({ children }) => {
     return (
         <Box
+            as="section"
             p={4}
             mb={6}
             mt={3}
