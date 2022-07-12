@@ -7,18 +7,18 @@ import {
     ListItem,
     Button,
     Icon,
-    useColorModeValue
-} from '@chakra-ui/react'
-import IntroCard from '../components/intro-card'
-import ProfilePicture from '../components/profile-picture'
-import { Project, ProjectTitle } from '../components/projects'
-import { IoLogoGithub } from 'react-icons/io5'
-import { IoLogoLinkedin } from 'react-icons/io'
+    useColorModeValue,
+} from "@chakra-ui/react"
+import IntroCard from "../components/intro-card"
+import ProfilePicture from "../components/profile-picture"
+import { Project, ProjectTitle } from "../components/projects"
+import { IoLogoGithub } from "react-icons/io5"
+import { IoLogoLinkedin } from "react-icons/io"
 
 const Page = () => {
     return (
         <Container>
-            <Box display={{ md: 'flex' }}>
+            <Box display={{ md: "flex" }}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         Rubén Maté
@@ -40,7 +40,7 @@ const Page = () => {
                     Burgos University. I love everything related to coding and
                     learning new programming languages and frameworks. My
                     developer workflow revolves around the terminal and I have
-                    my own{' '}
+                    my own{" "}
                     <Link href="https://github.com/rubenmate/dotfiles">
                         Neovim config and dotfiles
                     </Link>
@@ -49,13 +49,37 @@ const Page = () => {
                 </Box>
             </Box>
 
-            <Box as="section" mb={6}>
+            <Box mb={6}>
                 <Heading as="h3" variant="section-title">
                     Projects
                 </Heading>
                 <Box textAlign="justify">
-                    I&apos;m currently learning JavaScript and HTML/CSS. My next
-                    goal will be to learn React and Typescript.
+                    I&apos;m currently learning JavaScript/Typescript, HTML/CSS
+                    and React.
+                    <Project>
+                        <ProjectTitle>
+                            <Link href="https://pokedex.rubenmate.com">
+                                Pokedex App:
+                            </Link>
+                        </ProjectTitle>
+                        Project to experiment with a fullstack aproach to web
+                        development. It uses a stack consisting of Next.js, tRPC
+                        and Tailwind.
+                        <br />
+                        Link to the source code on{" "}
+                        <Link href="https://github.com/rubenmate/pokedex-app">
+                            GitHub
+                        </Link>
+                    </Project>
+                    <Project>
+                        <ProjectTitle>
+                            <Link href="https://github.com/rubenmate/homepage">
+                                My own homepage:
+                            </Link>
+                        </ProjectTitle>
+                        Built with Next.js as a React framework and ChakraUI (an
+                        accesible library for React components){" "}
+                    </Project>
                     <Project>
                         <ProjectTitle>
                             <Link href="https://github.com/rubenmate/Letterboxd-Tweet-Poster">
@@ -65,15 +89,6 @@ const Page = () => {
                         Simple Python script to automate a repetitive task. It
                         will search your Letterboxd profile and tweet your last
                         logged films in a Twitter thread.
-                    </Project>
-                    <Project>
-                        <ProjectTitle>
-                            <Link href="https://github.com/rubenmate/homepage">
-                                My own homepage:
-                            </Link>
-                        </ProjectTitle>
-                        Built with Next.js as a React framework and ChakraUI (an
-                        accesible library for React components){' '}
                     </Project>
                 </Box>
             </Box>
@@ -90,8 +105,8 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 colorScheme={useColorModeValue(
-                                    'purple',
-                                    'telegram'
+                                    "purple",
+                                    "telegram"
                                 )}
                                 leftIcon={<Icon as={IoLogoGithub} />}
                             >
@@ -107,8 +122,8 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 colorScheme={useColorModeValue(
-                                    'purple',
-                                    'telegram'
+                                    "purple",
+                                    "telegram"
                                 )}
                                 leftIcon={<Icon as={IoLogoLinkedin} />}
                             >
