@@ -22,35 +22,33 @@ const Page = () => {
         <Container>
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
-                    <Heading as='h2' variant='page-title'>
+                    <Heading as="h2" variant="page-title">
                         Rubén Maté
                     </Heading>
                 </Box>
             </Box>
             <IntroCard>
-                Hello, my name is Rubén and I&apos;m a computer science student
-                from Burgos, Spain. I love coding and I love doing it on Neovim.
+                Hello, my name is Rubén and I&apos;m a computer science student from Burgos, Spain.
+                I love coding and I love doing it on Neovim.
             </IntroCard>
             <ProfilePicture />
 
             <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+                <Heading as="h3" variant="section-title">
                     Whoami
                 </Heading>
-                <Box textAlign='justify'>
-                    I&apos;m a last year student of Computer Science degree in
-                    Burgos University. I love everything related to coding and
-                    learning new programming languages and frameworks. My
-                    developer workflow revolves around the terminal and I have
-                    my own{' '}
-                    <Link href='https://github.com/rubenmate/dotfiles'>
+                <Box textAlign="justify">
+                    I&apos;m a last year student of Computer Science degree in Burgos University. I
+                    love everything related to coding and learning new programming languages and
+                    frameworks. My developer workflow revolves around the terminal and I have my own{' '}
+                    <Link href="https://github.com/rubenmate/dotfiles">
                         Neovim config and dotfiles
                     </Link>
                     . <br />
                     Thanks for stopping by!
                 </Box>
-                <Box align='center' mb={6}>
-                    <NextLink href='/posts' passHref scroll={false}>
+                <Box align="center" mb={6}>
+                    <NextLink href="/posts" passHref scroll={false}>
                         <Button
                             mt={4}
                             colorScheme={useColorModeValue('purple', 'orange')}
@@ -63,49 +61,42 @@ const Page = () => {
             </Box>
 
             <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+                <Heading as="h3" variant="section-title">
                     Projects
                 </Heading>
-                <Box textAlign='justify'>
-                    I&apos;m currently learning JavaScript and HTML/CSS. My next
-                    goal will be to learn React and Typescript.
+                <Box textAlign="justify">
+                    I&apos;m currently learning JavaScript and HTML/CSS. My next goal will be to
+                    learn React and Typescript.
                     <Project>
                         <ProjectTitle>
-                            <Link href='https://github.com/rubenmate/Letterboxd-Tweet-Poster'>
+                            <Link href="https://github.com/rubenmate/Letterboxd-Tweet-Poster">
                                 LetterBot:
                             </Link>
                         </ProjectTitle>
-                        Simple Python script to automate a repetitive task. It
-                        will search your Letterboxd profile and tweet your last
-                        logged films in a Twitter thread.
+                        Simple Python script to automate a repetitive task. It will search your
+                        Letterboxd profile and tweet your last logged films in a Twitter thread.
                     </Project>
                     <Project>
                         <ProjectTitle>
-                            <Link href='https://github.com/rubenmate/homepage'>
+                            <Link href="https://github.com/rubenmate/homepage">
                                 My own homepage:
                             </Link>
                         </ProjectTitle>
-                        Built with Next.js as a React framework and ChakraUI (an
-                        accesible library for React components){' '}
+                        Built with Next.js as a React framework and ChakraUI (an accesible library
+                        for React components){' '}
                     </Project>
                 </Box>
             </Box>
             <Box mb={6}>
-                <Heading as='h3' variant='section-title'>
+                <Heading as="h3" variant="section-title">
                     Web Presence
                 </Heading>
                 <List>
                     <ListItem>
-                        <Link
-                            href='https://github.com/rubenmate'
-                            target='_blank'
-                        >
+                        <Link href="https://github.com/rubenmate" target="_blank">
                             <Button
-                                variant='ghost'
-                                colorScheme={useColorModeValue(
-                                    'purple',
-                                    'telegram'
-                                )}
+                                variant="ghost"
+                                colorScheme={useColorModeValue('purple', 'telegram')}
                                 leftIcon={<Icon as={IoLogoGithub} />}
                             >
                                 @rubenmate
@@ -113,16 +104,10 @@ const Page = () => {
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <Link
-                            href='https://www.linkedin.com/in/ruben-mate'
-                            target='_blank'
-                        >
+                        <Link href="https://www.linkedin.com/in/ruben-mate" target="_blank">
                             <Button
-                                variant='ghost'
-                                colorScheme={useColorModeValue(
-                                    'purple',
-                                    'telegram'
-                                )}
+                                variant="ghost"
+                                colorScheme={useColorModeValue('purple', 'telegram')}
                                 leftIcon={<Icon as={IoLogoLinkedin} />}
                             >
                                 @ruben-mate
