@@ -104,7 +104,7 @@ const Page = () => {
                 </Heading>
                 <Flex as="div" justify="space-around" align="center">
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
@@ -116,7 +116,7 @@ const Page = () => {
                         </svg>
                     </Box>
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
@@ -130,7 +130,7 @@ const Page = () => {
                     </Box>
 
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
@@ -142,7 +142,7 @@ const Page = () => {
                     </Box>
 
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
@@ -165,7 +165,7 @@ const Page = () => {
                         </svg>
                     </Box>
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
@@ -196,7 +196,7 @@ const Page = () => {
                         </svg>
                     </Box>
                     <Box
-                        w={{ base: "40px", md: "60px" }}
+                        w={{ base: "40px", sm: "60px" }}
                         _hover={{ transform: "scale(1.2)", transition: "transform 0.3s ease" }}
                     >
                         <svg viewBox="0 0 128 128">
