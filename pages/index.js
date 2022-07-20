@@ -8,26 +8,31 @@ import {
     Button,
     Icon,
     useColorModeValue,
+    useColorMode,
 } from "@chakra-ui/react"
+import styled from "@emotion/styled"
 import IntroCard from "../components/intro-card"
 import ProfilePicture from "../components/profile-picture"
 import { Project, ProjectTitle } from "../components/projects"
 import { IoLogoGithub } from "react-icons/io5"
 import { IoLogoLinkedin } from "react-icons/io"
 
+const TextHighlight = styled.span`
+    font-weight: bold;
+    color: ${(props) => (props.light ? "gray" : "turquoise")};
+`
+
+const TextUnderline = styled.span`
+    text-decoration: underline;
+`
 const Page = () => {
+    const { colorMode } = useColorMode()
     return (
         <Container>
-            <Box display={{ md: "flex" }}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        Rubén Maté
-                    </Heading>
-                </Box>
-            </Box>
+            <Box height={30} />
             <IntroCard>
-                Hello, my name is Rubén and I&apos;m a computer science student
-                from Burgos, Spain. I love coding and I love doing it on Neovim.
+                Hello, my name is <TextUnderline>Rubén Maté</TextUnderline> and I&apos;m a front end
+                developer from Spain
             </IntroCard>
             <ProfilePicture />
 
@@ -35,12 +40,19 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Whoami
                 </Heading>
-                <Box textAlign="justify">
-                    I&apos;m a last year student of Computer Science degree in
-                    Burgos University. I love everything related to coding and
-                    learning new programming languages and frameworks. My
-                    developer workflow revolves around the terminal and I have
-                    my own{" "}
+                <Box textAlign="left">
+                    I&apos;m a last year student of Computer Science degree in Burgos University. I
+                    love everything related to coding and learning new programming languages and
+                    frameworks but I&apos;m mostly learning{" "}
+                    {colorMode === "light" ? (
+                        <TextHighlight light>web development</TextHighlight>
+                    ) : (
+                        <TextHighlight dark>web development</TextHighlight>
+                    )}
+                    .
+                </Box>
+                <Box textAlign="left" mt={6}>
+                    My developer workflow revolves around the terminal and I have my own{" "}
                     <Link href="https://github.com/rubenmate/dotfiles">
                         Neovim config and dotfiles
                     </Link>
