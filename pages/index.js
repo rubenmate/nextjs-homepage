@@ -65,23 +65,17 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Projects
                 </Heading>
-                <Box textAlign="justify">
-                    I&apos;m currently learning JavaScript/Typescript, HTML/CSS
-                    and React.
+                <Box textAlign="left">
+                    I&apos;m currently learning JavaScript/Typescript, HTML/CSS and React.
                     <Project>
                         <ProjectTitle>
-                            <Link href="https://pokedex.rubenmate.com">
-                                Pokedex App:
-                            </Link>
+                            <Link href="https://pokedex.rubenmate.com">Pokedex App:</Link>
                         </ProjectTitle>
-                        Project to experiment with a fullstack aproach to web
-                        development. It uses a stack consisting of Next.js, tRPC
-                        and Tailwind.
+                        Project to experiment with a fullstack aproach to web development. It uses a
+                        stack consisting of Next.js, tRPC and Tailwind.
                         <br />
                         Link to the source code on{" "}
-                        <Link href="https://github.com/rubenmate/pokedex-app">
-                            GitHub
-                        </Link>
+                        <Link href="https://github.com/rubenmate/pokedex-app">GitHub</Link>
                     </Project>
                     <Project>
                         <ProjectTitle>
@@ -89,8 +83,8 @@ const Page = () => {
                                 My own homepage:
                             </Link>
                         </ProjectTitle>
-                        Built with Next.js as a React framework and ChakraUI (an
-                        accesible library for React components){" "}
+                        Built with Next.js as a React framework and ChakraUI (an accesible library
+                        for React components){" "}
                     </Project>
                     <Project>
                         <ProjectTitle>
@@ -98,9 +92,8 @@ const Page = () => {
                                 LetterBot:
                             </Link>
                         </ProjectTitle>
-                        Simple Python script to automate a repetitive task. It
-                        will search your Letterboxd profile and tweet your last
-                        logged films in a Twitter thread.
+                        Simple Python script to automate a repetitive task. It will search your
+                        Letterboxd profile and tweet your last logged films in a Twitter thread.
                     </Project>
                 </Box>
             </Box>
@@ -110,16 +103,10 @@ const Page = () => {
                 </Heading>
                 <List>
                     <ListItem>
-                        <Link
-                            href="https://github.com/rubenmate"
-                            target="_blank"
-                        >
+                        <Link href="https://github.com/rubenmate" target="_blank">
                             <Button
                                 variant="ghost"
-                                colorScheme={useColorModeValue(
-                                    "purple",
-                                    "telegram"
-                                )}
+                                colorScheme={useColorModeValue("purple", "telegram")}
                                 leftIcon={<Icon as={IoLogoGithub} />}
                             >
                                 @rubenmate
@@ -127,16 +114,10 @@ const Page = () => {
                         </Link>
                     </ListItem>
                     <ListItem>
-                        <Link
-                            href="https://www.linkedin.com/in/ruben-mate"
-                            target="_blank"
-                        >
+                        <Link href="https://www.linkedin.com/in/ruben-mate" target="_blank">
                             <Button
                                 variant="ghost"
-                                colorScheme={useColorModeValue(
-                                    "purple",
-                                    "telegram"
-                                )}
+                                colorScheme={useColorModeValue("purple", "telegram")}
                                 leftIcon={<Icon as={IoLogoLinkedin} />}
                             >
                                 @ruben-mate
