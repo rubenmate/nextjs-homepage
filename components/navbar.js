@@ -25,16 +25,8 @@ const LinkItem = ({ path, href, target, children, ...props }) => {
         <NextLink href={href} passHref={true} scroll={false}>
             <Link
                 p={2}
-                bg={
-                    isActive
-                        ? useColorModeValue('#6B46C1', '#8be9fd')
-                        : undefined
-                }
-                color={
-                    isActive
-                        ? useColorModeValue('white', '#161b22')
-                        : inactiveColor
-                }
+                bg={isActive ? useColorModeValue('#6B46C1', '#8be9fd') : undefined}
+                color={isActive ? useColorModeValue('white', '#161b22') : inactiveColor}
                 target={target}
                 {...props}
             >
@@ -48,23 +40,17 @@ const Navbar = (props) => {
     const { path } = props
     return (
         <Box
-            position='fixed'
-            as='nav'
-            w='100%'
+            position="fixed"
+            as="nav"
+            w="100%"
             bg={useColorModeValue('#FFFFFF80', '#161b2280')}
             style={{ backdropFilter: 'blur(10px)' }}
             zIndex={1}
             {...props}
         >
-            <Container
-                display='flex'
-                justify='space-between'
-                p={2}
-                maxW='container.md'
-                wrap='wrap'
-            >
-                <Flex align='center' mr={5} ml={{ base: 2 }}>
-                    <Heading as='h1' size='lg' letterSpacing={'tighter'}>
+            <Container display="flex" justify="space-between" p={2} maxW="container.md" wrap="wrap">
+                <Flex align="center" mr={5} ml={{ base: 2 }}>
+                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
                         <Logo />
                     </Heading>
                 </Flex>
@@ -72,23 +58,23 @@ const Navbar = (props) => {
                     direction={{ base: 'column', md: 'row' }}
                     display={{ base: 'none', md: 'flex' }}
                     width={{ base: 'full', md: 'auto' }}
-                    alignItems='center'
-                    justifyContent='flex-end'
+                    alignItems="center"
+                    justifyContent="flex-end"
                     flexGrow={3}
                     mt={{ base: 4, nmd: 0 }}
                 >
-                    <LinkItem href='/posts' path={path}>
+                    <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
-                    <LinkItem href='/contact' path={path}>
+                    <LinkItem href="/contact" path={path}>
                         Contact
                     </LinkItem>
                     <LinkItem
-                        target='_blank'
-                        href='https://github.com/rubenmate'
+                        target="_blank"
+                        href="https://github.com/rubenmate"
                         path={path}
-                        display='inline-flex'
-                        alignItems='center'
+                        display="inline-flex"
+                        alignItems="center"
                         style={{ gap: 4 }}
                         pl={2}
                     >
@@ -99,27 +85,25 @@ const Navbar = (props) => {
                     <ColorModeToggleButton />
                 </Stack>
 
-                <Box display={{ md: 'none' }} flex={1} align='right'>
+                <Box display={{ md: 'none' }} flex={1} align="right">
                     <ColorModeToggleButton />
                     <Box display={{ base: 'inline-block', md: 'none' }} ml={2}>
                         <Menu>
                             <MenuButton
                                 as={IconButton}
                                 icon={<HamburgerIcon />}
-                                variant='outline'
-                                aria-label='options menu'
-                                border='hidden'
+                                variant="outline"
+                                aria-label="options menu"
+                                border="hidden"
                             />
-                            <MenuList
-                                bg={useColorModeValue('white', '#202023')}
-                            >
-                                <NextLink href='/contact' passHref>
+                            <MenuList bg={useColorModeValue('white', '#202023')}>
+                                <NextLink href="/posts" passHref>
+                                    <MenuItem>Posts</MenuItem>
+                                </NextLink>
+                                <NextLink href="/contact" passHref>
                                     <MenuItem>Contact</MenuItem>
                                 </NextLink>
-                                <NextLink
-                                    href='https://github.com/rubenmate'
-                                    passHref
-                                >
+                                <NextLink href="https://github.com/rubenmate" passHref>
                                     <MenuItem style={{ gap: 4 }}>
                                         GitHub
                                         <IoLogoGithub />
