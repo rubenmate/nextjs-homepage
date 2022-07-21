@@ -1,7 +1,7 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
-import styled from '@emotion/styled'
-import { Remark } from 'react-remark'
-import { getAllPostIds, getPostData } from '../../utils/posts'
+import { Box, Container, Heading } from "@chakra-ui/react"
+import styled from "@emotion/styled"
+import { Remark } from "react-remark"
+import { getAllPostIds, getPostData } from "../../utils/posts"
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -25,7 +25,7 @@ const Paragraph = styled.p`
     margin-top: 20px;
 `
 export default function Post({ postData }) {
-    let dateToFormat = new Date(postData.date)
+    const dateToFormat = new Date(postData.date)
     return (
         <Container>
             <Box pt={2}>
@@ -34,11 +34,11 @@ export default function Post({ postData }) {
                 </Heading>
                 <Box mb={8}>
                     <Box textAlign="left">
-                        {dateToFormat.toLocaleString('en-US', {
-                            weekday: 'short',
-                            day: 'numeric',
-                            year: 'numeric',
-                            month: 'long',
+                        {dateToFormat.toLocaleString("en-US", {
+                            weekday: "short",
+                            day: "numeric",
+                            year: "numeric",
+                            month: "long",
                         })}
                     </Box>
                 </Box>

@@ -1,7 +1,6 @@
-import NextLink from 'next/link'
-
-const { Box, Container, Heading, Text } = require('@chakra-ui/react')
-import { getSortedPostsData } from '../utils/posts'
+import { getSortedPostsData } from "../utils/posts"
+import NextLink from "next/link"
+const { Box, Container, Heading, Text } = require("@chakra-ui/react")
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -28,7 +27,7 @@ const Posts = ({ allPostsData }) => {
                 Posts
             </Heading>
             {allPostsData.map(({ id, date, title, description }) => {
-                let dateToFormat = new Date(date)
+                const dateToFormat = new Date(date)
                 return (
                     <>
                         <NextLink key={id} href={`/posts/${id}`} passHref scroll={false}>
@@ -37,7 +36,7 @@ const Posts = ({ allPostsData }) => {
                                 justifySelf="start"
                                 cursor="pointer"
                                 _hover={{
-                                    'background-color': '#80808010',
+                                    "background-color": "#80808010",
                                 }}
                             >
                                 <Heading as="h4" variant="post-title">
@@ -45,11 +44,11 @@ const Posts = ({ allPostsData }) => {
                                 </Heading>
                                 <Box as="p">{description}</Box>
                                 <Text fontSize="sm" pt={2} mb={4}>
-                                    {dateToFormat.toLocaleString('en-US', {
-                                        weekday: 'short',
-                                        day: 'numeric',
-                                        year: 'numeric',
-                                        month: 'long',
+                                    {dateToFormat.toLocaleString("en-US", {
+                                        weekday: "short",
+                                        day: "numeric",
+                                        year: "numeric",
+                                        month: "long",
                                     })}
                                 </Text>
                             </Box>
