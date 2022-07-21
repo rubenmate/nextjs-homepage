@@ -1,3 +1,4 @@
+import NextLink from "next/link"
 import {
     Container,
     Box,
@@ -17,6 +18,7 @@ import ProfilePicture from "../components/profile-picture"
 import { Project, ProjectTitle } from "../components/projects"
 import { IoLogoGithub } from "react-icons/io5"
 import { IoLogoLinkedin } from "react-icons/io"
+import { ChevronRightIcon } from "@chakra-ui/icons"
 
 const TextHighlight = styled.span`
     font-weight: bold;
@@ -59,6 +61,17 @@ const Page = () => {
                     </Link>
                     . <br />
                     Thanks for stopping by!
+                </Box>
+                <Box align="center" mb={6}>
+                    <NextLink href="/posts" passHref scroll={false}>
+                        <Button
+                            mt={4}
+                            colorScheme={useColorModeValue("purple", "orange")}
+                            rightIcon={<ChevronRightIcon />}
+                        >
+                            Check my latest blog posts!
+                        </Button>
+                    </NextLink>
                 </Box>
             </Box>
 
