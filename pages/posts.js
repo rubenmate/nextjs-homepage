@@ -1,9 +1,22 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-const { Box, Container, Heading } = require("@chakra-ui/react")
+import NextLink from 'next/link'
 
-const Posts = () => {
-    const [isEmpty, setIsEmpty] = useState(true)
+const { Box, Container, Heading, background, Text } = require('@chakra-ui/react')
+import { getSortedPostsData } from '../utils/posts'
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
+    return {
+        props: {
+            allPostsData,
+        },
+    }
+}
+
+const Posts = ({ allPostsData }) => {
+    console.log(allPostsData)
+
     const emptyView = (
         <Box pt={50} align="center">
             <Heading as="h3" variant="section-title">
@@ -12,11 +25,41 @@ const Posts = () => {
         </Box>
     )
     const normalView = (
-        <Box pt={2} align="center">
-            <Heading as="h3">A lot to see here...</Heading>
+        <Box pt={2}>
+            <Heading as="h3" variant="title" pb={4}>
+                Posts
+            </Heading>
+            {allPostsData.map(({ id, date, title, description }) => {
+                let dateToFormat = new Date(date)
+                return (
+                    <NextLink key={id} href={`/pages/${id}`} passHref scroll={false}>
+                        <Box
+                            as="article"
+                            justifySelf="start"
+                            cursor="pointer"
+                            _hover={{
+                                'background-color': '#80808010',
+                            }}
+                        >
+                            <Heading as="h4" variant="post-title">
+                                {title}
+                            </Heading>
+                            <Box as="p">{description}</Box>
+                            <Text fontSize="sm" pt={2}>
+                                {dateToFormat.toLocaleString('en-US', {
+                                    weekday: 'short',
+                                    day: 'numeric',
+                                    year: 'numeric',
+                                    month: 'long',
+                                })}
+                            </Text>
+                        </Box>
+                    </NextLink>
+                )
+            })}
         </Box>
     )
-    return <Container>{isEmpty ? emptyView : normalView}</Container>
+    return <Container>{allPostsData.at(0) === undefined ? emptyView : normalView}</Container>
 }
 
 export default Posts

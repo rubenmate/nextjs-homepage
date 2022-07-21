@@ -27,6 +27,15 @@ const theme = extendTheme({
 
         Heading: {
             variants: {
+                title: {
+                    textDecoration: 'underline',
+                    fontSize: 32,
+                    textUnderlineOffset: 6,
+                    textDecorationColor: '#525252',
+                    textDecorationThickness: 4,
+                    marginTop: 3,
+                    marginBottom: 4,
+                },
                 'section-title': {
                     textDecoration: 'underline',
                     fontSize: 22,
@@ -35,6 +44,14 @@ const theme = extendTheme({
                     textDecorationThickness: 4,
                     marginTop: 3,
                     marginBottom: 4,
+                },
+                'post-title': {
+                    textDecoration: 'underline',
+                    fontSize: 20,
+                    textUnderlineOffset: 6,
+                    textDecorationColor: '#525252',
+                    textDecorationThickness: 3,
+                    marginBottom: 2,
                 },
             },
         },
