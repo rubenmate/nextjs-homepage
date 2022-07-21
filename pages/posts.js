@@ -1,19 +1,20 @@
-import { getSortedPostsData } from "../utils/posts"
+import { generateRssFeed, getSortedPostsData } from "../utils/posts"
 import NextLink from "next/link"
 const { Box, Container, Heading, Text } = require("@chakra-ui/react")
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
+    const test = await generateRssFeed()
     return {
         props: {
+            test,
             allPostsData,
         },
     }
 }
 
 const Posts = ({ allPostsData }) => {
-    console.log(allPostsData)
-
+    console.log(allPostsData.test)
     const emptyView = (
         <Box pt={50} align="center">
             <Heading as="h3" variant="section-title">
