@@ -87,7 +87,7 @@ const Page = () => {
                         Project to experiment with a fullstack aproach to web development. It uses a
                         stack consisting of Next.js, tRPC and Tailwind.
                         <br />
-                        Link to the source code on{" "}
+                        Source code on{" "}
                         <Link href="https://github.com/rubenmate/pokedex-app">GitHub</Link>
                     </Project>
                     <Project>
@@ -101,12 +101,13 @@ const Page = () => {
                     </Project>
                     <Project>
                         <ProjectTitle>
-                            <Link href="https://github.com/rubenmate/Letterboxd-Tweet-Poster">
-                                LetterBot:
-                            </Link>
+                            <Link href="https://todo-list-rubenmate.vercel.app/">To-Do App:</Link>
                         </ProjectTitle>
-                        Simple Python script to automate a repetitive task. It will search your
-                        Letterboxd profile and tweet your last logged films in a Twitter thread.
+                        Simple To-Do List app written in React. Built for learning the React
+                        fundamentals with Typescript. It is also using Vite and Tailwind CSS.
+                        <br />
+                        Source code on{" "}
+                        <Link href="https://github.com/rubenmate/todo-list">GitHub</Link>
                     </Project>
                 </Box>
             </Box>
